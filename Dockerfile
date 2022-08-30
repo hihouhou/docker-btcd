@@ -12,8 +12,8 @@ MAINTAINER hihouhou < hihouhou@hihouhou.com >
 ENV GOROOT /usr/local/go
 ENV GOPATH /opt/btcd
 ENV PATH $GOPATH/bin:$GOROOT/bin:$PATH
-ENV GO_VERSION 1.16.5
-ENV BTCD_VERSION v0.22.0-beta
+ENV GO_VERSION 1.17.1
+ENV BTCD_VERSION v0.23.1
 
 # Update & install packages for go-callisto dep
 RUN apt-get update && \
