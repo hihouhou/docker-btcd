@@ -13,7 +13,7 @@ ENV GOROOT /usr/local/go
 ENV GOPATH /opt/btcd
 ENV PATH $GOPATH/bin:$GOROOT/bin:$PATH
 ENV GO_VERSION 1.17.1
-ENV BTCD_VERSION v0.23.1
+ENV BTCD_VERSION v0.23.2
 
 # Update & install packages for go-callisto dep
 RUN apt-get update && \
