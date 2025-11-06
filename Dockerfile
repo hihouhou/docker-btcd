@@ -5,15 +5,15 @@
 #
 
 # Pull base image.
-FROM debian:latest
+FROM debian:trixie
 
 LABEL org.opencontainers.image.authors="hihouhou < hihouhou@hihouhou.com >"
 
-ENV GOROOT /usr/local/go
-ENV GOPATH /opt/btcd
-ENV PATH $GOPATH/bin:$GOROOT/bin:$PATH
-ENV GO_VERSION 1.17.1
-ENV BTCD_VERSION v0.23.3
+ENV GOROOT=/usr/local/go
+ENV GOPATH=/opt/btcd
+ENV PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+ENV GO_VERSION=1.25.3
+ENV BTCD_VERSION=v0.25.0
 
 # Update & install packages for go-callisto dep
 RUN apt-get update && \
